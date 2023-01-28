@@ -1,18 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkyellow"
+
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/titre"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:fontFamily="@font/njnaruto"
+        android:textSize="100px"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titre"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/parchemin">
+
+        <TextView
+            android:id="@+id/titremenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/njnaruto"
+            android:gravity="center"
+            android:layout_marginTop="150px"
+            android:text="@string/titre_menu"
+            android:textColor="@color/black"
+
+            android:textSize="100px" />
+
+        <RelativeLayout
+            android:id="@+id/itemMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titremenu"
+            android:layout_marginTop="35dp"
+
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/solo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/njnaruto"
+                android:text="@string/solo"
+                android:textColor="@color/black"
+
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/equipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/solo"
+                android:fontFamily="@font/njnaruto"
+                android:text="@string/equipe"
+                android:layout_marginBottom="50dp"
+                android:textColor="@color/black"
+
+                android:textSize="60px" />
+
+            <TextView
+                android:id="@+id/ligne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/equipe"
+                android:fontFamily="@font/njnaruto"
+                android:text="@string/enLigne"
+                android:textColor="@color/black"
+
+                android:textSize="60px"
+                android:layout_marginBottom="50dp"
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

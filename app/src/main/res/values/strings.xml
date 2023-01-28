@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Game quiz</string>
+    <string name="app_name">Anime quiz</string>
+    <string name="titre_menu">Menu</string>
+    <string name="solo">jeu solo</string>
+    <string name="equipe">jeu en equipe</string>
+    <string name="enLigne">jeu en ligne</string>
+
+
 </resources>
