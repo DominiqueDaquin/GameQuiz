@@ -13,6 +13,6 @@
         android:fontFamily="@font/njnaruto"
         android:gravity="center"
         android:layout_alignParentTop="true"
-        android:textSize="50px"
+        android:textSize="100px"
         />
 </RelativeLayout>
