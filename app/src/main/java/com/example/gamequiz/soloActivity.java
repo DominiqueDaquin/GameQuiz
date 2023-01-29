@@ -13,7 +13,7 @@ import android.widget.TextView;
 public class soloActivity extends AppCompatActivity {
     private EditText textsolo;
     private Button btnvalider;
-    private TextView t1;
+    private TextView t;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class soloActivity extends AppCompatActivity {
         btnvalider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            t1.setText("yo");
+            t.setText("yo");
             }
         });
     }
