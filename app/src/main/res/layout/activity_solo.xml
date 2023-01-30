@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".soloActivity">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/Titresolo"
-    android:text="@string/solo"
-    android:fontFamily="@font/njnaruto"
-    android:gravity="center"
-    android:layout_alignParentTop="true"
-    android:textSize="100px"
-    />
-</RelativeLayout>
+
+    <TextView
+        android:id="@+id/Titresolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/njnaruto"
+        android:gravity="center"
+        android:text="@string/solo"
+        android:textColor="#6200ED"
+        android:textSize="100px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="309dp"
+        android:layout_height="31dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="240dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="363dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:text="Question i"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix4"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix3"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
