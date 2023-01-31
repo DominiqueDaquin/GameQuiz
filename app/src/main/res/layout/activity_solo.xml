@@ -5,13 +5,15 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/parchemin"
+    android:backgroundTint="#E1CDCD"
     tools:context=".soloActivity">
 
     <TextView
         android:id="@+id/Titresolo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/njnaruto"
         android:gravity="center"
         android:text="@string/solo"
@@ -35,9 +37,9 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="309dp"
         android:layout_height="31dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="240dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="240dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -47,25 +49,7 @@
         android:text="Question i"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="289dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choix2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="418dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choix1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="361dp" />
+        tools:layout_editor_absoluteY="342dp" />
 
     <Button
         android:id="@+id/button4"
@@ -74,7 +58,25 @@
         android:text="Choix4"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="534dp" />
+        tools:layout_editor_absoluteY="550dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choix2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="454dp" />
 
     <Button
         android:id="@+id/button5"
@@ -83,6 +85,18 @@
         android:text="Choix3"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="475dp" />
+        tools:layout_editor_absoluteY="502dp" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="212dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="5s"
+        android:textAlignment="center"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="271dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
