@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         solo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent jeusolo=new Intent(getApplicationContext(),soloActivity.class);
+                Intent jeusolo=new Intent(getApplicationContext(),loginActivity.class);
                 startActivity(jeusolo);
                 finish();
             }

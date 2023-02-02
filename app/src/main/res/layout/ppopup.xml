@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/titrepopup"
+    android:textColor="@color/black"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Creer une nouvelle partie"
+    android:fontFamily="@font/njnaruto"
+    android:layout_margin="10dp"
+    android:textSize="20dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/editpopup"
+        android:hint="Entrer le nom de votre partie"
+        android:textColor="@color/black"
+        android:fontFamily="@font/njnaruto"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btns"
+
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valider"
+            android:id="@+id/btnvalider"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+
+            android:fontFamily="@font/njnaruto"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+
+            android:id="@+id/btnannuler"
+            android:fontFamily="@font/njnaruto"/>
+           </LinearLayout>
+</LinearLayout>

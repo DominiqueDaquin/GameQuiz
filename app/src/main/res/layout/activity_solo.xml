@@ -16,32 +16,6 @@
     android:textSize="100px"
     />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/Titresolo"
-        android:gravity="center"
-        android:id="@+id/relative1"
-        android:layout_marginTop="70px">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_margin="20dp"
-            android:hint="Entrer votre nom"
-            android:layout_height="100px"
-            android:id="@+id/textsolo"
-            android:gravity="center"
-
-            />
-
-        <Button
-            android:id="@+id/buttonValider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Valider"
-            android:layout_below="@+id/textsolo"
-            android:layout_centerInParent="true"
-           />
 
 
-    </RelativeLayout>
 </RelativeLayout>

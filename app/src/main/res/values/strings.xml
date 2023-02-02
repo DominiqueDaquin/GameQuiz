@@ -4,6 +4,6 @@
     <string name="solo">jeu solo</string>
     <string name="equipe">jeu en equipe</string>
     <string name="enLigne">jeu en ligne</string>
-
+    <string name="login">login</string>
 
 </resources>
